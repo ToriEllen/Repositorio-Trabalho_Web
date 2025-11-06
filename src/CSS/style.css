@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Meow+Script&family=Pacifico&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Finger+Paint&family=Gamja+Flower&family=Meow+Script&family=Pacifico&family=Shadows+Into+Light&display=swap');
+:root{
+    --color1: #fff ;
+    --color2: #CD2C58;
+    --color3: #E06B80;
+    --color4: #FFC69D ;
+    --color5: #FFE6D4 ;
+    --color6: #ffe0e6 ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+[href]{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.nav-bar{
+    display: flex;
+    background-color: var(--color3);
+    height: 55px;
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
+       
+}
+
+.nav-item{
+    padding: 7px;
+    margin: auto;
+    border-radius: 8px;
+    color: var(--color1);
+    transition: background-color 0.3s, color 0.3s;
+    background-color: transparent;
+}
+
+.nav-item a {
+    transition: color 0.3s;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    background-color: var(--color1);
+}
+
+.nav-item.active a,
+.nav-item a:hover {
+    color: var(--color3);
+}
+
+.titulo{
+    padding: 5%;
+    margin: auto;
+    height: 55%;
+    font-size: clamp(2rem, 3.0vw, 4.0rem);
+    background-color: var(--color5);
+    color: var(--color2);
+    font-family: "Finger Paint", sans-serif;
+}
+
+.apresentacao{
+    padding: 2%;
+    margin: auto;
+    max-width: 80%;
+    min-width: none;
+    font-family: "Coming Soon", cursive;
+    font-size: 20px;
+    border-radius: 40px;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 5%;
+   
+}
+
+#frase{
+    background-color: var(--color6);
+    height: 35px;
+    margin: auto;
+    padding: 2%;
+    max-width: fit-content;
+    border-radius: 25px;
+    margin-top: 5%;
+    font-family: "Finger Paint", sans-serif;
+    color: var(--color2);
+}
+
+#imagem img{
+    border-radius: 40%;
+    height: 300px;
+    margin: auto;
+    padding: 5px;
+}
+
+#imagem{
+    margin: auto;
+    padding: 2%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;  /* Alinha horizontalmente ao centro */
+    align-items: center;
+}
