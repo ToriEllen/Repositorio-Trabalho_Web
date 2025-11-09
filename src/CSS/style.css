@@ -17,6 +17,10 @@
     padding: 0;
 }
 
+/*body{
+    background: linear-gradient(to bottom, var(--color1),var(--color1), var(--color3));
+}*/
+
 [href]{
     text-decoration: none;
     color: var(--color1);
@@ -70,10 +74,11 @@
     max-width: 80%;
     min-width: none;
     font-family: "Coming Soon", cursive;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 40px;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.5);
     margin-top: 5%;
+    backdrop-filter: blur(5px);
    
 }
 
@@ -89,11 +94,38 @@
     color: var(--color2);
 }
 
+#texto-2,
+#sobre{
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.5);
+    height: auto;
+    margin: auto;
+    padding: 2%;
+    max-width: 80%;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    font-family: "Coming Soon", cursive;
+    font-size: 18px;
+    backdrop-filter: blur(5px);
+}
+
+#sobre{
+    margin-top: 5%;
+}
+
 #imagem img{
-    border-radius: 40%;
-    height: 300px;
+    height: 270px;
     margin: auto;
     padding: 5px;
+}
+
+.flower img{
+    position: fixed;
+    bottom: 2px;
+    opacity: 0.8;
+    margin: auto;
+    width: 370px;
+    z-index: -1;
+    
 }
 
 #imagem{
@@ -103,4 +135,146 @@
     display: flex;
     justify-content: center;  /* Alinha horizontalmente ao centro */
     align-items: center;
+}
+
+#titulo-hoobie{
+    font-size: 20px;
+   
+}
+
+#hobbies{
+    background-color: var(--color6);
+    height: auto;
+    margin: 0 auto;
+    padding: 3%;
+    max-width: fit-content;
+    border-radius: 25px;
+    margin-top: 5%;
+    font-family: "Coming Soon", cursive;
+    color: var(--color2);
+
+}
+
+#hobbie-ler{
+    display: flex;
+    margin: 0 ;
+    width: 250px;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.projeto img{
+   width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.2);
+    margin-top: 8px;
+}
+
+.projeto img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 260px;
+    max-width: 300px;
+    padding: 12px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+#container-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 55px auto;
+    max-width: 85%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 18px;              
+    justify-content: center;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#container-projetos button{
+    padding: 5px;
+    background-color: var(--color2);
+    color: var(--color1);
+
+}
+
+.proj-btn{
+    font-family: "Coming Soon", cursive;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+.proj-btn:hover{
+    background-color: var(--color3);
+    transform: translateY(-2px);
+}
+
+.proj-title{
+    font-family: "Coming Soon", cursive;
+    color: var(--color2);
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+table{
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 80%;
+    color: var(--color1);
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5%;
+    background-color: var(--color3);
+    border-radius: 15px;
+    font-family: "Coming Soon", cursive;
+}
+
+#contato{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    color: var(--color2);
+    margin-top: 5%;
+}
+
+#versiculo{
+    font-size: 15px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    color: var(--color2);
+    margin-bottom: 30px;
+    margin: 40px auto;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: var(--color2);
+    font-family: "Coming Soon", cursive;
+    position: relative;
+    bottom: 0;
+
 }
